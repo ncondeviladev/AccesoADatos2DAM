@@ -36,13 +36,18 @@ public class E4 {
         System.out.println("Está oculto? " + f.isHidden());
         System.out.println("Se puede leer? " + f.canRead());
         System.out.println("Se puede escribir? " + f.canWrite());
-        System.out.println("tamaño del archivo: " + f.length());
+        System.out.println("Tamaño del archivo: " );
+        System.out.println(f.length() + " bytes");
+        System.out.println(f.length() / 1024 + " KB");
+        System.out.println(f.length() / 1024 / 1024 + " MB");
 
         Date fechaArchivo = new Date(f.lastModified());
         System.out.println("Última modificación: " + fechaArchivo.toString());
         f.setLastModified(System.currentTimeMillis());
         Date fechaActualizada = new Date(f.lastModified());
         System.out.println("Fecha modificación actualizada: " + fechaActualizada.toString());
+
+
 
 
         if (!encontrado) System.out.println("No se ha encontrado el archivo");
