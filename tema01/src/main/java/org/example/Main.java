@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
 
     private static void mostrarEjercicios() {
@@ -116,8 +116,28 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
 
-        menuTerminal();
+        //menuTerminal();
 
+        HashMap<String, Integer> map = new HashMap(10);
+        map.put("uno", 1);
+        map.put("dos", 2);
+        map.put("tres", 3);
+        map.put("cuatro", 4);
+
+        System.out.println("Tamaño del HashMap: " + map.getSize());
+        System.out.println();
+
+
+        System.out.println("Mostramos el primer elemento");
+        System.out.println("Numero 1 : " + map.get("uno"));
+        System.out.println();
+
+        System.out.println("Mostramos todos los elementos");
+        map.mostrar();
+        System.out.println("Eliminamos el último elemento");
+        map.remove("cuatro");
+        System.out.println();
+        map.mostrar();
     }
 
 }
