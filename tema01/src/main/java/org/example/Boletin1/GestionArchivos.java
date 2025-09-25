@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Boletin1;
 
 import java.io.*;
 
@@ -133,38 +133,64 @@ public class GestionArchivos {
         return true;
     }
 
-    public void concat(String ruta1, String ruta2, String rutaDestino)  {
+    /**
+     *
+     * @param ruta1
+     * @param ruta2
+     * @param rutaDestino
+     */
+    public void concat(String ruta1, String ruta2, String rutaDestino) {
         File f1 = new File(ruta1);
         File f2 = new File(ruta2);
         File fDest = new File(rutaDestino);
-        try{
+
+        try {
             fDest.createNewFile();
         } catch (IOException e) {
-            System.out.println("Error al crear el tercer archivo. " + e.getMessage());
+            System.out.println("Error al crear el archivo destino: " + e.getMessage());
         }
 
-        if(!f1.exists() || !f1.isFile() || !f2.exists() || !f2.isFile()) {
-            System.out.println("Alguno de los archivos no es correcto..");
+        if (!f1.exists() || !f1.isFile() || !f2.exists() || !f2.isFile()) {
+            System.out.println("Alguno de los archivos no es correcto.");
             return;
         }
-        try(FileInputStream fis1 = new FileInputStream(f1);
-            FileInputStream fis2 = new FileInputStream(f2);
-            FileOutputStream fisDest = new FileOutputStream(fDest)) {
+
+        // Concatenar archivos
+        try (FileInputStream fis1 = new FileInputStream(f1);
+             FileInputStream fis2 = new FileInputStream(f2);
+             FileOutputStream fos = new FileOutputStream(fDest)) {
 
             byte[] buffer = new byte[1024];
             int leido;
-            while((leido = fis1.read(buffer)) != -1){
-                fisDest.write(buffer);
+
+            while ((leido = fis1.read(buffer)) != -1) {
+                fos.write(buffer, 0, leido);
             }
-            while((leido = fis2.read(buffer)) != -1){
-                fisDest.write(buffer);
+            while ((leido = fis2.read(buffer)) != -1) {
+                fos.write(buffer, 0, leido);
             }
 
+        } catch (IOException e) {
+            System.out.println("Error al concatenar los archivos: " + e.getMessage());
+            return;
+        }
 
-        }catch(IOException e){
-            System.out.println("Error con los archivos. " + e.getMessage());
+        // Mostrar contenido en hexadecimal
+        try (FileInputStream fis = new FileInputStream(fDest)) {
+            int b, contador = 0;
+            while ((b = fis.read()) != -1) {
+                System.out.printf("%02x ", b);
+                contador++;
+                if (contador % 12 == 0) {
+                    System.out.println();
+                }
+            }
+            System.out.println();
+        } catch (IOException e) {
+            System.out.println("Error al leer el archivo destino: " + e.getMessage());
         }
     }
+
 
 
     public void concatLineas(String ruta1, String ruta2, String rutaDestino){

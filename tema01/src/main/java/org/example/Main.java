@@ -1,8 +1,10 @@
 package org.example;
 
-import org.example.*;
 
-import java.io.FileNotFoundException;
+import org.example.Boletin1.*;
+import org.example.Boletin2.E1;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -18,7 +20,30 @@ public class Main {
         E4.mostrarArchivo();
     }
 
-    private static void menuTerminal() {
+    public static void probarHashMap(){
+        HashMap<String, Integer> map = new HashMap<>(10);
+        map.put("uno", 1);
+        map.put("dos", 2);
+        map.put("tres", 3);
+        map.put("cuatro", 4);
+
+        System.out.println("Tamaño del HashMap: " + map.getSize());
+        System.out.println();
+
+
+        System.out.println("Mostramos el primer elemento");
+        System.out.println("Numero 1 : " + map.get("uno"));
+        System.out.println();
+
+        System.out.println("Mostramos todos los elementos");
+        map.mostrar();
+        System.out.println("Eliminamos el último elemento");
+        map.remove("cuatro");
+        System.out.println();
+        map.mostrar();
+    }
+
+    private static void menuTerminalB1() {
 
         int opcion;
         do {
@@ -113,31 +138,14 @@ public class Main {
     }
 
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
 
+        //menuTerminalB1();
+        //probarHashMap();
 
-        //menuTerminal();
-
-        HashMap<String, Integer> map = new HashMap(10);
-        map.put("uno", 1);
-        map.put("dos", 2);
-        map.put("tres", 3);
-        map.put("cuatro", 4);
-
-        System.out.println("Tamaño del HashMap: " + map.getSize());
-        System.out.println();
-
-
-        System.out.println("Mostramos el primer elemento");
-        System.out.println("Numero 1 : " + map.get("uno"));
-        System.out.println();
-
-        System.out.println("Mostramos todos los elementos");
-        map.mostrar();
-        System.out.println("Eliminamos el último elemento");
-        map.remove("cuatro");
-        System.out.println();
-        map.mostrar();
+        //Boletin 2
+        //E1
+        E1.crearDni(FileUtils.convertirRutaEnFile("src/main/resources/Boletin2/dni.txt"));
     }
 
 }

@@ -1,8 +1,7 @@
-package org.example;
+package org.example.Boletin1;
 
+import org.example.FileUtils;
 import java.io.*;
-
-import org.example.*;
 
 public class E3 {
 
@@ -10,7 +9,7 @@ public class E3 {
     public static void infoDir() {
 
 
-        File file = Util.fileDirectorio();
+        File file = FileUtils.fileDirectorio();
 
         System.out.println("Nombre carpeta - " + file.getName());
         System.out.println("Ruta - " + file.getAbsolutePath());

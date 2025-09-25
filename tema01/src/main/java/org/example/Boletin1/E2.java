@@ -1,12 +1,13 @@
-package org.example;
+package org.example.Boletin1;
 
+import org.example.FileUtils;
 import java.io.*;
 
 
 public class E2 {
 
     public static void listar() {
-        File file = Util.fileDirectorio();
+        File file = FileUtils.fileDirectorio();
         File[] lista = file.listFiles();
 
         if (lista != null) {

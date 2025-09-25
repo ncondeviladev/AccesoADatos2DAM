@@ -1,11 +1,12 @@
-package org.example;
+package org.example.Boletin1;
 
-import java.io.*;
+
+import org.example.FileUtils;
 
 
 public class E1 {
     public E1() {
-        if(Util.fileDirectorio().exists() && Util.fileDirectorio().isDirectory()){
+        if(FileUtils.fileDirectorio().exists() && FileUtils.fileDirectorio().isDirectory()){
             System.out.println("El directorio existe");
         } else System.out.println("Error! El directorio NO existe...");
 
@@ -14,7 +15,7 @@ public class E1 {
 
     public static void existe() {
 
-        if(Util.fileDirectorio().exists() && Util.fileDirectorio().isDirectory()){
+        if(FileUtils.fileDirectorio().exists() && FileUtils.fileDirectorio().isDirectory()){
             System.out.println("El directorio existe");
         } else System.out.println("Error! El directorio NO existe...");
 
