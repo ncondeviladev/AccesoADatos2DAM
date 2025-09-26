@@ -1,0 +1,6 @@
+1238,Paco,Vila,Arjona,1991-12-21
+1001,María,Pérez,Gómez,2004-05-12
+1002,Juan,López,Martínez,2003-08-23
+1003,Lucía,Fernández,Ruiz,2005-01-03
+1004,Carlos,Sánchez,Ortega,2002-11-30
+1005,Elena,Torres,Morales,2004-07-19

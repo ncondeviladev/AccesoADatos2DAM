@@ -2,14 +2,17 @@ package org.example;
 
 
 import org.example.Boletin1.*;
+import org.example.Boletin2.Alumno;
 import org.example.Boletin2.E1;
+import org.example.Boletin2.GestionAlumnos;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Main {
 
-    private static final Scanner sc = new Scanner(System.in);
+
 
 
     private static void mostrarEjercicios() {
@@ -45,6 +48,7 @@ public class Main {
 
     private static void menuTerminalB1() {
 
+         Scanner sc = new Scanner(System.in);
         int opcion;
         do {
             System.out.println("Escoge una opción:");
@@ -139,13 +143,28 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-
+        //Boletin 1 --------------
         //menuTerminalB1();
         //probarHashMap();
 
-        //Boletin 2
+        //Boletin 2 --------------
         //E1
-        E1.crearDni(FileUtils.convertirRutaEnFile("src/main/resources/Boletin2/dni.txt"));
+        //E1.crearDni(FileUtils.convertirRutaEnFile("src/main/resources/Boletin2/dni.txt"));
+
+        //E2
+        GestionAlumnos gestorAlumnos = new GestionAlumnos("src/main/resources/Boletin2/ListaAlumnos.txt");
+        gestorAlumnos.crearAlumnos();
+        Alumno a1 = new Alumno("1040", "MariCarmen", "Jimenez", "Peiro",  LocalDate.of(1995, 5, 10));
+        Alumno a2 = new Alumno("1238", "Paco", "Vila", "Arjona", LocalDate.of(1991, 12, 21));
+        Alumno[] nuevosAlumnos = new Alumno[]{a1, a2};
+        gestorAlumnos.insertarAlumnos(nuevosAlumnos);
+        gestorAlumnos.eliminarAlumnos(a1);
+        System.out.println(a1.toString());
+        System.out.println(a2.toString());
+
+
+        //E3
+
     }
 
 }
