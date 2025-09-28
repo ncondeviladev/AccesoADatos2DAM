@@ -2,10 +2,8 @@ package org.example;
 
 
 import org.example.Boletin1.*;
-import org.example.Boletin2.AccesValidator;
-import org.example.Boletin2.Alumno;
+import org.example.Boletin2.*;
 import org.example.Boletin2.E1;
-import org.example.Boletin2.GestionAlumnos;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -165,8 +163,13 @@ public class Main {
 
 
         //E3
-        AccesValidator av = new AccesValidator();
-        av.menuAccesos();
+        /*AccesValidator av = new AccesValidator();
+        av.menuAccesos();*/
+
+        //E4
+        /*AccesValidatorJson avj = new AccesValidatorJson();
+        avj.menuAccesos();*/
+
 
 
 
