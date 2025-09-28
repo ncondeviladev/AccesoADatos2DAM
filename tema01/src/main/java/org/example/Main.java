@@ -2,6 +2,7 @@ package org.example;
 
 
 import org.example.Boletin1.*;
+import org.example.Boletin2.AccesValidator;
 import org.example.Boletin2.Alumno;
 import org.example.Boletin2.E1;
 import org.example.Boletin2.GestionAlumnos;
@@ -152,7 +153,7 @@ public class Main {
         //E1.crearDni(FileUtils.convertirRutaEnFile("src/main/resources/Boletin2/dni.txt"));
 
         //E2
-        GestionAlumnos gestorAlumnos = new GestionAlumnos("src/main/resources/Boletin2/ListaAlumnos.txt");
+        /* GestionAlumnos gestorAlumnos = new GestionAlumnos("src/main/resources/Boletin2/ListaAlumnos.txt");
         gestorAlumnos.crearAlumnos();
         Alumno a1 = new Alumno("1040", "MariCarmen", "Jimenez", "Peiro",  LocalDate.of(1995, 5, 10));
         Alumno a2 = new Alumno("1238", "Paco", "Vila", "Arjona", LocalDate.of(1991, 12, 21));
@@ -160,10 +161,15 @@ public class Main {
         gestorAlumnos.insertarAlumnos(nuevosAlumnos);
         gestorAlumnos.eliminarAlumnos(a1);
         System.out.println(a1.toString());
-        System.out.println(a2.toString());
+        System.out.println(a2.toString()); */
 
 
         //E3
+        AccesValidator av = new AccesValidator();
+        av.menuAccesos();
+
+
+
 
     }
 
