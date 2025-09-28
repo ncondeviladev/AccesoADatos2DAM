@@ -4,6 +4,8 @@ package org.example;
 import org.example.Boletin1.*;
 import org.example.Boletin2.*;
 import org.example.Boletin2.E1;
+import org.example.Boletin2.E5.GameStorage;
+import org.example.Boletin2.E5.TresEnRaya;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -170,9 +172,24 @@ public class Main {
         /*AccesValidatorJson avj = new AccesValidatorJson();
         avj.menuAccesos();*/
 
+        //E5
+        TresEnRaya tresR = new TresEnRaya();
+        tresR.pruebaTablero();
+        GameStorage gs = new GameStorage("src/main/resources/tresEnRaya.dat");
 
-
-
+        try {
+            gs.guardarPartida(tresR);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        TresEnRaya nuevoTres = null;
+        try {
+            nuevoTres = new TresEnRaya(gs.cargarPartida());
+            nuevoTres.setTurno('O');
+        } catch (IOException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
+        System.out.println(nuevoTres.toString());
 
     }
 
