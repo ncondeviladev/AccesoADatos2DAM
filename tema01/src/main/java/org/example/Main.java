@@ -173,7 +173,7 @@ public class Main {
         avj.menuAccesos();*/
 
         //E5
-        TresEnRaya tresR = new TresEnRaya();
+        /*TresEnRaya tresR = new TresEnRaya();
         tresR.pruebaTablero();
         GameStorage gs = new GameStorage("src/main/resources/tresEnRaya.dat");
 
@@ -189,7 +189,16 @@ public class Main {
         } catch (IOException | ClassNotFoundException e){
             e.printStackTrace();
         }
-        System.out.println(nuevoTres.toString());
+        System.out.println(nuevoTres.toString());*/
+
+        //E6
+        //CalculadorPrimo prims = new CalculadorPrimo();
+        //prims.menuPrimos();
+
+        int cores = Runtime.getRuntime().availableProcessors();
+        System.out.println("Cores - " + cores);
+
+
 
     }
 
