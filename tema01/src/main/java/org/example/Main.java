@@ -195,8 +195,10 @@ public class Main {
         //CalculadorPrimo prims = new CalculadorPrimo();
         //prims.menuPrimos();
 
-        int cores = Runtime.getRuntime().availableProcessors();
-        System.out.println("Cores - " + cores);
+        //E7
+        System.out.println("Cores - " + Runtime.getRuntime().availableProcessors());
+        CalculadorPrimoMultiHilo primoHilos = new CalculadorPrimoMultiHilo();
+        primoHilos.run();
 
 
 
