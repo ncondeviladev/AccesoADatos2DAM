@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class CalculadorPrimo {
 
-    private String ruta = "src/main/java/resources/Boletin2/primos.txt";
+    private String ruta = "src/main/resources/Boletin2/primos.txt";
 
 
     public CalculadorPrimo() { }

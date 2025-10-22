@@ -2,18 +2,22 @@ package org.example;
 
 
 import org.example.Boletin1.*;
-import org.example.Boletin2.*;
+import org.example.Boletin2.Alumno;
 import org.example.Boletin2.E1;
-import org.example.Boletin2.E5.GameStorage;
-import org.example.Boletin2.E5.TresEnRaya;
+import org.example.Boletin3.xml.B3E2;
+import org.xml.sax.SAXException;
 
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
+import java.util.Locale;
 import java.util.Scanner;
 
+
 public class Main {
-
-
 
 
     private static void mostrarEjercicios() {
@@ -24,7 +28,7 @@ public class Main {
         E4.mostrarArchivo();
     }
 
-    public static void probarHashMap(){
+    public static void probarHashMap() {
         HashMap<String, Integer> map = new HashMap<>(10);
         map.put("uno", 1);
         map.put("dos", 2);
@@ -49,7 +53,7 @@ public class Main {
 
     private static void menuTerminalB1() {
 
-         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int opcion;
         do {
             System.out.println("Escoge una opción:");
@@ -143,6 +147,26 @@ public class Main {
     }
 
 
+    public static void crearAlumnosAleatorios ( int cantidad){
+        java.util.HashMap<String, Alumno> alumnos = new java.util.HashMap<>(20);
+
+        com.github.javafaker.Faker faker = new com.github.javafaker.Faker(Locale.of("ES"));
+        Bombo bombo = new Bombo(1000, 9_999_999);
+        for (int i = 0; i < cantidad; i++) {
+            String nia = String.format("%08d", i);
+            String nombre = faker.name().firstName();
+            String apellido1 = faker.name().lastName();
+            String apellido2 = faker.name().lastName();
+            Date fechaRandom = faker.date().birthday(18, 50);
+            LocalDate fechaNacimiento = fechaRandom.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+            alumnos.put(nia, new Alumno(nia, nombre, apellido1, apellido2, fechaNacimiento));
+        }
+        for(Alumno a : alumnos.values()) {
+            System.out.println(a);
+        }
+
+    }
+
     public static void main(String[] args) throws IOException {
         //Boletin 1 --------------
         //menuTerminalB1();
@@ -196,12 +220,54 @@ public class Main {
         //prims.menuPrimos();
 
         //E7
-        System.out.println("Cores - " + Runtime.getRuntime().availableProcessors());
-        CalculadorPrimoMultiHilo primoHilos = new CalculadorPrimoMultiHilo();
-        primoHilos.run();
+        //System.out.println("Cores - " + Runtime.getRuntime().availableProcessors());
+        //CalculadorPrimoMultiHilo primoHilos = new CalculadorPrimoMultiHilo();
+        //primoHilos.run();
+
+        //crearAlumnosAleatorios(10);
 
 
+        // BOLETIN 3 =====================================================
+
+        //E1
+        /*
+        * try {
+            B3E1.ejecutar();
+        } catch (FileNotFoundException e) {
+            System.out.println("No se encontró el archivo empleados.xml");
+            e.printStackTrace();
+        } catch (ParserConfigurationException e) {
+            System.out.println("Error al configurar el parser XML");
+            e.printStackTrace();
+        } catch (SAXException e) {
+            System.out.println("El XML tiene errores de formato");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("Error de entrada/salida al leer el archivo");
+            e.printStackTrace();
+        }*/
+
+        //E2
+        try{
+            B3E2.ejecutar();
+        } catch (FileNotFoundException e) {
+            System.out.println("No se encontró el archivo empleados.xml");
+            e.printStackTrace();
+        } catch (ParserConfigurationException e) {
+            System.out.println("Error al configurar el parser XML");
+            e.printStackTrace();
+        } catch (SAXException e) {
+            System.out.println("El XML tiene errores de formato");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("Error de entrada/salida al leer el archivo");
+            e.printStackTrace();
+        } catch (NullPointerException e){
+            System.out.println("Error NullPointer");
+            e.printStackTrace();
+        }
 
     }
+
 
 }

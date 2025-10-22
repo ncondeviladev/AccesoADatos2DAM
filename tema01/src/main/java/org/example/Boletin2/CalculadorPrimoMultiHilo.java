@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class CalculadorPrimoMultiHilo implements Runnable {
 
-    private String ruta = "src/main/java/resources/Boletin2/primosHilos.txt";
+    private String ruta = "src/main/resources/Boletin2/primosHilos.txt";
     private final int inicioHilo1 = 0, finHilo1 = 1000;
     private final int inicioHilo2 = 1001, finHilo2 = 2000;
     private final int inicioHilo3 = 2001, finHilo3 = 3000;

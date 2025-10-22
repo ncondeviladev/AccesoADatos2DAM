@@ -1,6 +1,6 @@
 package org.example.Boletin1;
 
-import org.example.FileUtils;
+import org.example.myUtils.FileUtils;
 import java.io.File;
 import java.util.Date;
 
