@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d456bb9e-e8f5-4eab-98f3-18ac024fb41d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace-nCon-Book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace-nCon-Book.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin1/E1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin1/E1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin1/E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin1/E2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin1/E3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin1/E3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin1/E4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin1/E4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin1/GestionArchivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin1/GestionArchivos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/AccesValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/AccesValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/AccesValidatorJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/AccesValidatorJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/Alumno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/CalculadorPrimo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/CalculadorPrimo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/CalculadorPrimoMultiHilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/CalculadorPrimoMultiHilo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/E1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/E1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/E5/GameStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/E5/GameStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/E5/TresEnRaya.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/E5/TresEnRaya.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/GestionAlumnos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Boletin2/GestionAlumnos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MiHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MiHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Bienvenida.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Bienvenida.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Boletin2/ListaAlumnos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Boletin2/ListaAlumnos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Boletin2/dni.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Boletin2/dni.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Boletin2/dni_conLetras.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Boletin2/dni_conLetras.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Boletin2/pass.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Boletin2/pass.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\ncond\.gradle\wrapper\dists\gradle-8.14-bin\38aieal9i53h9rfe7vjup95b9\gradle-8.14" javaHome="C:\Java\jdk-21" gradleVersion="8.14" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="33TXtFuuguNLhJp7hU0tnaozoDg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ncond/OneDrive - Conselleria d'Educació/AD/tema01"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ncond\Desktop\tema01\src\main\java\org\example" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d456bb9e-e8f5-4eab-98f3-18ac024fb41d" name="Changes" comment="" />
+      <created>1759342248426</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759342248426</updated>
+    </task>
+    <servers />
+  </component>
+</project>
