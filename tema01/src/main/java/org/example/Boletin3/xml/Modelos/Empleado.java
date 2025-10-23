@@ -1,4 +1,4 @@
-package org.example.Boletin3.xml;
+package org.example.Boletin3.xml.Modelos;
 
 public class Empleado {
 

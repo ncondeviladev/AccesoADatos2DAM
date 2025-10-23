@@ -1,5 +1,7 @@
 package org.example.Boletin3.xml;
 
+import org.example.Boletin3.xml.Loaders.EmpleadoLoader;
+import org.example.Boletin3.xml.Modelos.Empleado;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;

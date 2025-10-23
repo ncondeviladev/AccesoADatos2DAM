@@ -1,14 +1,11 @@
 package org.example.Boletin3.xml;
 
-import org.example.myUtils.ParseUtils;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
+import org.example.Boletin3.xml.Loaders.EmpleadoLoader;
+import org.example.Boletin3.xml.Modelos.Empleado;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 public class B3E1 {

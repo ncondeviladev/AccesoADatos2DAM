@@ -1,5 +1,6 @@
-package org.example.Boletin3.xml;
+package org.example.Boletin3.xml.Loaders;
 
+import org.example.Boletin3.xml.Modelos.Empleado;
 import org.example.myUtils.ParseUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

@@ -5,6 +5,8 @@ import org.example.Boletin1.*;
 import org.example.Boletin2.Alumno;
 import org.example.Boletin2.E1;
 import org.example.Boletin3.xml.B3E2;
+import org.example.Boletin3.xml.B3E3;
+import org.example.Boletin3.xml.B3E4;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -248,6 +250,7 @@ public class Main {
         }*/
 
         //E2
+        /*
         try{
             B3E2.ejecutar();
         } catch (FileNotFoundException e) {
@@ -266,6 +269,50 @@ public class Main {
             System.out.println("Error NullPointer");
             e.printStackTrace();
         }
+        */
+
+        //E3
+        /*
+        try{
+            B3E3.mostrarTituloLibros();
+            B3E3.contrarLibrosGenero();
+
+        } catch (ParserConfigurationException e) {
+            System.out.println("Error al configurar el parser XML");
+            e.printStackTrace();
+        } catch (SAXException e) {
+            System.out.println("El XML tiene errores de formato");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("Error de entrada/salida al leer el archivo");
+            e.printStackTrace();
+        } catch (NullPointerException e){
+            System.out.println("Error NullPointer");
+            e.printStackTrace();
+        }
+        */
+        //E4
+        try{
+            B3E4.mostrarItems();
+
+        } catch (ParserConfigurationException e) {
+            System.out.println("Error al configurar el parser XML");
+            e.printStackTrace();
+        } catch (SAXException e) {
+            System.out.println("El XML tiene errores de formato");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("Error de entrada/salida al leer el archivo");
+            e.printStackTrace();
+        } catch (NullPointerException e){
+            System.out.println("Error NullPointer");
+            e.printStackTrace();
+        }catch (Exception e){
+            System.out.println("Excepicion generica");
+            e.printStackTrace();
+        }
+
+
 
     }
 
