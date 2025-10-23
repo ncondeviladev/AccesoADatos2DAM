@@ -4,6 +4,7 @@ package org.example;
 import org.example.Boletin1.*;
 import org.example.Boletin2.Alumno;
 import org.example.Boletin2.E1;
+import org.example.Boletin3.json.B3E5;
 import org.example.Boletin3.xml.B3E2;
 import org.example.Boletin3.xml.B3E3;
 import org.example.Boletin3.xml.B3E4;
@@ -149,7 +150,7 @@ public class Main {
     }
 
 
-    public static void crearAlumnosAleatorios ( int cantidad){
+    public static void crearAlumnosAleatorios(int cantidad) {
         java.util.HashMap<String, Alumno> alumnos = new java.util.HashMap<>(20);
 
         com.github.javafaker.Faker faker = new com.github.javafaker.Faker(Locale.of("ES"));
@@ -163,7 +164,7 @@ public class Main {
             LocalDate fechaNacimiento = fechaRandom.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
             alumnos.put(nia, new Alumno(nia, nombre, apellido1, apellido2, fechaNacimiento));
         }
-        for(Alumno a : alumnos.values()) {
+        for (Alumno a : alumnos.values()) {
             System.out.println(a);
         }
 
@@ -292,6 +293,7 @@ public class Main {
         }
         */
         //E4
+        /*
         try{
             B3E4.mostrarItems();
 
@@ -311,8 +313,14 @@ public class Main {
             System.out.println("Excepicion generica");
             e.printStackTrace();
         }
+*/
 
-
+        //E5
+        try {
+            B3E5.mostrarAlumnosYFechas();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 

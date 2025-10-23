@@ -2,11 +2,11 @@ package org.example.Boletin3.xml.Modelos;
 
 public class Empleado {
 
-    private String id;
-    private String nombre;
-    private String departamento;
-    private Double salario;
-    private String fechaAlta;
+    private final String id;
+    private final String nombre;
+    private final String departamento;
+    private final Double salario;
+    private final String fechaAlta;
 
     public Empleado(String id, String nombre, String departamento, Double salario, String fechaAlta) {
         this.id = id;
@@ -14,6 +14,10 @@ public class Empleado {
         this.departamento = departamento;
         this.salario = salario;
         this.fechaAlta = fechaAlta;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public String getNombre() {

@@ -4,13 +4,13 @@ import java.util.List;
 
 public class Libro {
 
-    private String isbn;
-    private String titulo;
-    private Autor autor;
-    private int anio;
-    private List<String> generos;
+    private final String isbn;
+    private final String titulo;
+    private final Autor autor;
+    private final int anio;
+    private final List<String> generos;
     private boolean disponible;
-    private List<Prestamo> prestamos;
+    private final List<Prestamo> prestamos;
 
     public Libro(String isbn, String titulo, Autor autor, int anio, List<String> generos, boolean disponible) {
         this.isbn = isbn;
@@ -19,7 +19,11 @@ public class Libro {
         this.anio = anio;
         this.generos = generos;
         this.disponible = disponible;
-        this.prestamos = prestamos;
+        this.prestamos = null;
+    }
+
+    public String getIsbn() {
+        return isbn;
     }
 
     public String getTitulo() {
@@ -42,7 +46,6 @@ public class Libro {
         return disponible;
     }
 
-
     public List<Prestamo> getPrestamos() {
         return prestamos;
     }
@@ -50,7 +53,4 @@ public class Libro {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
-
-
-
 }

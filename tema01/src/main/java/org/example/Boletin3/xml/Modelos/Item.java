@@ -2,11 +2,11 @@ package org.example.Boletin3.xml.Modelos;
 
 public class Item {
 
-    private String sku;
-    private String descripcion;
-    private int cantidad;
-    private Double precioUnitario;
-    private String moneda;
+    private final String sku;
+    private final String descripcion;
+    private final int cantidad;
+    private final Double precioUnitario;
+    private final String moneda;
 
     public Item(String sku, String descripcion, int cantidad, Double precioUnitario, String moneda) {
         this.sku = sku;

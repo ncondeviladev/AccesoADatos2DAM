@@ -17,6 +17,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("com.google.code.gson:gson:2.11.0")
     implementation("com.github.javafaker:javafaker:1.0.2")
+    implementation("com.google.code.gson:gson:2.13.2")
 }
 
 tasks.test {

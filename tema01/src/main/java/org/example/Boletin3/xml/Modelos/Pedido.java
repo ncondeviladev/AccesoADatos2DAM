@@ -4,12 +4,12 @@ import java.util.List;
 
 public class Pedido {
 
-    private String id;
-    private Cliente cliente;
-    private String fecha;
-    private List<Item> items;
-    private Double total;
-    private String moneda;
+    private final String id;
+    private final Cliente cliente;
+    private final String fecha;
+    private final List<Item> items;
+    private final Double total;
+    private final String moneda;
 
     public Pedido(String id, Cliente cliente, String fecha, List<Item> items, Double total, String modeda) {
         this.id = id;

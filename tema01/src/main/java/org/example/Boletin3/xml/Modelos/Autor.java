@@ -2,8 +2,8 @@ package org.example.Boletin3.xml.Modelos;
 
 public class Autor {
 
-    private String nombre;
-    private String fechaNacimiento;
+    private final String nombre;
+    private final String fechaNacimiento;
 
     public Autor(String nombre, String fechaNacimiento) {
         this.nombre = nombre;

@@ -7,17 +7,17 @@
     "notas": [
       {
          "asignatura": "Programación multimedia y dispositivos móviles",
-         "nota": 8.2,
+         "nota": 8.2
       },
       {
          "asignatura": "Acceso a datos",
-         "nota": 7.5,
+         "nota": 7.5
       },
       {
          "asignatura": "Programación de servicios y procesos",
-         "nota": 6.5,
+         "nota": 6.5
       }
-    ],
+    ]
   },
   {
     "id": "A002",
@@ -27,17 +27,17 @@
     "notas": [
       {
          "asignatura": "Programación multimedia y dispositivos móviles",
-         "nota": 5.2,
+         "nota": 5.2
       },
       {
          "asignatura": "Acceso a datos",
-         "nota": 6.5,
+         "nota": 6.5
       },
       {
          "asignatura": "Programación de servicios y procesos",
-         "nota": 4.5,
+         "nota": 4.5
       }
-    ],
+    ]
   },
   {
     "id": "A003",
@@ -47,17 +47,17 @@
     "notas": [
       {
          "asignatura": "Programación multimedia y dispositivos móviles",
-         "nota": 9.2,
+         "nota": 9.2
       },
       {
          "asignatura": "Acceso a datos",
-         "nota": 9.7,
+         "nota": 9.7
       },
       {
          "asignatura": "Programación de servicios y procesos",
-         "nota": 8.7,
+         "nota": 8.7
       }
-    ],
+    ]
   },
   {
     "id": "A004",
@@ -67,16 +67,16 @@
     "notas": [
       {
          "asignatura": "Programación multimedia y dispositivos móviles",
-         "nota": 7.2,
+         "nota": 7.2
       },
       {
          "asignatura": "Acceso a datos",
-         "nota": 7.5,
+         "nota": 7.5
       },
       {
          "asignatura": "Programación de servicios y procesos",
-         "nota": 9.1,
+         "nota": 9.1
       }
-    ],
+    ]
   }
 ]
