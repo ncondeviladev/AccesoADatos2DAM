@@ -1,5 +1,7 @@
 package org.example.Boletin3.xml.Modelos;
 
+import java.util.Objects;
+
 public class Item {
 
     private final String sku;
@@ -34,5 +36,18 @@ public class Item {
     }
     public String getMoneda() {
         return moneda;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Item item = (Item) o;
+        return cantidad == item.cantidad && Objects.equals(sku, item.sku) && Objects.equals(descripcion, item.descripcion) && Objects.equals(precioUnitario, item.precioUnitario) && Objects.equals(moneda, item.moneda);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(sku, descripcion, cantidad, precioUnitario, moneda);
     }
 }

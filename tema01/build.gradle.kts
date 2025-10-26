@@ -18,6 +18,7 @@ dependencies {
     implementation("com.google.code.gson:gson:2.11.0")
     implementation("com.github.javafaker:javafaker:1.0.2")
     implementation("com.google.code.gson:gson:2.13.2")
+    implementation("org.json:json:20250517")
 }
 
 tasks.test {

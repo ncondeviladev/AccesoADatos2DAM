@@ -5,6 +5,9 @@ import org.example.Boletin1.*;
 import org.example.Boletin2.Alumno;
 import org.example.Boletin2.E1;
 import org.example.Boletin3.json.B3E5;
+import org.example.Boletin3.json.B3E6;
+import org.example.Boletin3.json.B3E7;
+import org.example.Boletin3.json.B3E8;
 import org.example.Boletin3.xml.B3E2;
 import org.example.Boletin3.xml.B3E3;
 import org.example.Boletin3.xml.B3E4;
@@ -316,11 +319,36 @@ public class Main {
 */
 
         //E5
+        /*
         try {
-            B3E5.mostrarAlumnosYFechas();
+            B3E5 e5 = new B3E5();
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //E6
+        try {
+            B3E6 e6 = new B3E6();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        */
+        /*
+        //E7
+        try {
+            B3E7 e7 = new B3E7();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        */
+
+        //E8
+        try {
+            B3E8 e8 = new B3E8();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
 
     }
 

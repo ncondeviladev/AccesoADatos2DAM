@@ -1,0 +1,3 @@
+Inicializar en constructor
+equals y hasCode en todas las clases
+final en todos los atributos
